@@ -1,0 +1,30 @@
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# API keys and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Private data
+data/private/
+
+# Generated files
+reports/
+*.db
+*.log
+
+# Temporary patch files
+Mission10_patch/
+
+# Downloaded XBRL archives
+data/mission11/*.zip
