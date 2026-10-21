@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 교육용 XBRL 구조 데모. 실제 XBRL 공시·IFRS taxonomy가 아닙니다. -->
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance"
+            xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+            xmlns:demo="urn:audit-data-lab:educational-only">
+  <xbrli:context id="I2025">
+    <xbrli:entity><xbrli:identifier scheme="urn:demo">FAKE-COMPANY</xbrli:identifier></xbrli:entity>
+    <xbrli:period><xbrli:instant>2025-12-31</xbrli:instant></xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="D2025">
+    <xbrli:entity><xbrli:identifier scheme="urn:demo">FAKE-COMPANY</xbrli:identifier></xbrli:entity>
+    <xbrli:period><xbrli:startDate>2025-01-01</xbrli:startDate><xbrli:endDate>2025-12-31</xbrli:endDate></xbrli:period>
+  </xbrli:context>
+  <xbrli:unit id="KRW"><xbrli:measure>iso4217:KRW</xbrli:measure></xbrli:unit>
+  <demo:Assets contextRef="I2025" unitRef="KRW" decimals="0">130000000000</demo:Assets>
+  <demo:Liabilities contextRef="I2025" unitRef="KRW" decimals="0">50000000000</demo:Liabilities>
+  <demo:Equity contextRef="I2025" unitRef="KRW" decimals="0">80000000000</demo:Equity>
+  <demo:Revenue contextRef="D2025" unitRef="KRW" decimals="0">110000000000</demo:Revenue>
+</xbrli:xbrl>
