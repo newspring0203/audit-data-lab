@@ -28,3 +28,6 @@ Mission10_patch/
 
 # Downloaded XBRL archives
 data/mission11/*.zip
+
+# Generated ledger data
+data/derived/
