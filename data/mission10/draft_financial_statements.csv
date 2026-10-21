@@ -1,0 +1,26 @@
+﻿statement,line_id,line_name,reported_krw,source_note
+BS,cash,보통예금,10550000,GL 1010
+BS,accounts_receivable,매출채권,17210000,GL 1100
+BS,inventory,재고자산,3000000,GL 1200
+BS,current_assets,유동자산 합계,30760000,위 항목 합산
+BS,equipment,유형자산(취득원가),3000000,GL 1500
+BS,accumulated_depreciation,감가상각누계액(차감),-300000,GL 1590
+BS,net_equipment,유형자산 순액,2700000,위 항목 합산
+BS,total_assets,자산총계,33360000,회사 작성 재무상태표 초안
+BS,loan_payable,장기차입금,4000000,GL 2100
+BS,accrued_expenses,미지급비용,500000,GL 2200
+BS,total_liabilities,부채총계,4500000,위 항목 합산
+BS,share_capital,자본금,12000000,GL 3100
+BS,current_year_profit,당기이익(자본 반영),16960000,GL에서 도출한 순이익
+BS,total_equity,자본총계,28960000,위 항목 합산
+BS,total_liabilities_equity,부채 및 자본 총계,33460000,위 항목 합산
+PL,revenue,매출액,20660000,회사 작성 손익계산서 초안
+PL,cost_of_sales,매출원가,-2000000,GL 5010
+PL,gross_profit,매출총이익,18660000,위 항목 합산
+PL,salaries,급여,-1000000,GL 6100
+PL,rent,임차료,-500000,GL 6200
+PL,depreciation,감가상각비,-300000,GL 6300
+PL,operating_expenses,영업비용 합계,-1800000,위 항목 합산
+PL,operating_profit,영업이익,16860000,위 항목 합산
+PL,interest_expense,이자비용,-100000,GL 7100
+PL,net_income,당기순이익,16760000,위 항목 합산
