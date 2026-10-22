@@ -78,6 +78,31 @@ EY한영 감사부문 **Data Analytics – IT Specialist** 인턴 직무를 지�
 
 > **분석 범위:** 모든 ERP 거래 및 재무제표 검증 자료는 교육용 가상 데이터입니다. 탐지된 차이는 추가 검토 대상이며, 실제 회계 오류나 감사 결론으로 확정한 것은 아닙니다.
 
+### 4. 자동 테스트 — 19개 통과
+
+`unittest`를 활용해 전표 균형, 중복 매출 탐지, 시산표 검증, 경고 중복 집계 방지, XBRL 계정·기간·단위 처리 등 핵심 로직을 테스트했습니다.
+
+**결과: 19 tests / 19 passed**
+
+![자동 테스트 19개 통과](docs/05_unittest_19_passed.png)
+
+### 5. OpenDART 실제 공시 데이터 분석
+
+OpenDART API를 통해 삼성전자 2025년 연결재무제표를 조회하고, 계정·기간·단위 정보를 기준으로 재무 데이터를 분석했습니다.
+
+- **재무제표 조회:** 229개 행
+- **핵심 계정 매핑:** 6/6개
+- **자동 검증:** 재무상태표 회계등식, 전기 비교 등 3개 항목 PASS
+- **XBRL 구조 분석:** 숫자 Fact 4,877개 추출 및 구조 파싱
+
+![OpenDART 실제 데이터 분석 결과](docs/07_opendart_live.png)
+
+📥 [청구서 감사검토조서 Excel 파일](sample_outputs/mission07_audit_workpaper.xlsx)
+
+📥 [재무제표 검증 Excel 파일](sample_outputs/mission10_financial_statement_review.xlsx)
+
+> 실제 공개 공시자료를 활용한 데이터 구조 및 수치 일관성 검토이며, 내부 ERP 데이터 감사나 외부감사를 수행한 것은 아닙니다.
+
 - [01. Audit Data Workflow](#01-audit-data-workflow)
 - [02. Data and Tech Stack](#02-data-and-tech-stack)
 - [03. Audit Checks](#03-audit-checks)
